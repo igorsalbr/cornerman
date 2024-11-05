@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Instagram } from "lucide-react";
 import { Button } from "../components/ui/button";
@@ -14,24 +13,12 @@ export default function Component() {
   return (
     <div className="min-h-[100dvh] bg-white relative flex flex-col items-center justify-center p-4 md:p-8">
       <div className="absolute inset-0 opacity-10">
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202024-11-05%20at%2010.54.09-eg273IKjCcMxUskSGuf2Rdfuha1FAy.png"
-          alt="Background"
-          fill
-          className="object-cover"
-          priority
-        />
+        <img src="corner.png" className="object-cover" />
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto text-center">
         <div className="mb-8">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202024-11-05%20at%2010.54.09-eg273IKjCcMxUskSGuf2Rdfuha1FAy.png"
-            alt="Cornerman Fighting Center Logo"
-            width={200}
-            height={200}
-            className="mx-auto"
-          />
+          <img src="corner.png" width={200} height={200} className="mx-auto" />
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold text-black mb-4">
@@ -60,7 +47,7 @@ export default function Component() {
             ].map((modalidade) => (
               <span
                 key={modalidade}
-                className="px-4 py-2 bg-red-600 text-white rounded-full text-sm md:text-base"
+                className="px-4 py-2 bg-red-600 hover:bg-red-400 text-white rounded-full text-sm md:text-base"
               >
                 {modalidade}
               </span>
@@ -70,10 +57,11 @@ export default function Component() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button
-            onClick={() => handleWhatsAppClick}
-            className="bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg rounded-full w-full sm:w-auto"
+            onClick={() => handleWhatsAppClick()}
+            className="px-8 py-6 text-xl rounded-full w-full sm:w-auto"
+            variant="outline"
           >
-            Quero Treinar
+            Quero treinar com vocês!
           </Button>
 
           <Link
