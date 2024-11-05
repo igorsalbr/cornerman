@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Instagram } from "lucide-react";
@@ -68,7 +70,7 @@ export default function Component() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button
-            onClick={handleWhatsAppClick}
+            onClick={() => handleWhatsAppClick}
             className="bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg rounded-full w-full sm:w-auto"
           >
             Quero Treinar
