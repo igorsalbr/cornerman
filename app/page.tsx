@@ -79,7 +79,7 @@ export default function Component() {
             href="https://www.instagram.com/cornermanfc/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 text-black hover:text-red-600 transition-colors pb-4"
+            className="flex items-center justify-center gap-2 text-black hover:text-red-600 transition-colors pb-4 sm:pb-0"
           >
             <Instagram className="w-6 h-6" />
             <span>@cornermanfc</span>
