@@ -18,7 +18,18 @@ export default function Component() {
 
       <div className="relative z-10 max-w-3xl mx-auto text-center">
         <div className="mb-8">
-          <img src="corner.png" width={200} height={200} className="mx-auto" />
+          <img
+            src="corner.png"
+            width={200}
+            height={200}
+            className="mx-auto hidden sm:flex"
+          />
+          <img
+            src="corner.png"
+            width={120}
+            height={120}
+            className="mx-auto sm:hidden mt-6"
+          />
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold text-black mb-4">
@@ -68,7 +79,7 @@ export default function Component() {
             href="https://www.instagram.com/cornermanfc/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 text-black hover:text-red-600 transition-colors"
+            className="flex items-center justify-center gap-2 text-black hover:text-red-600 transition-colors pb-4"
           >
             <Instagram className="w-6 h-6" />
             <span>@cornermanfc</span>
